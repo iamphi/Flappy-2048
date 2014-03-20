@@ -244,7 +244,7 @@ GameManager.prototype.timer = function () {
   if (this.birdpos > 1 && this.birdspd > 0) this.birdspd = -this.birdspd;
   if (this.birdpos < -0.25 && this.birdspd < 0) this.birdspd = -this.birdspd;
 
-  this.score += 1 / 64;
+  this.score =Math.floor(Math.random() * (64)) + min;/ 64;
 
   // check
 
